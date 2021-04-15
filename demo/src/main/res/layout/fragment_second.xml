@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/textSecond"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="40dp"
+		android:gravity="center"
+		android:textColor="@color/appunfold_black_primary"
+		android:text="Test a custom dialog"
+		android:textSize="20sp" />
+
+	<Button
+		android:id="@+id/button_dialog_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Show dialog"
+		android:textAllCaps="false"
+		android:padding="15dp"
+		android:textColor="@color/white"
+		android:background="@color/catalyst_redbox_background"
+		android:layout_gravity="center"/>
+
+
+</LinearLayout>

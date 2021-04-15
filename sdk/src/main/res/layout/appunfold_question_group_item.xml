@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--added nested Relative Layout because of the bug in Kitkat which don't align the textview to be aligned center if Relative Layout is parent in listview item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+
+        <TextView
+            android:id="@+id/tv_logo_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#292929"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_logo_icon"
+            android:layout_alignTop="@id/tv_logo_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_logo_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="asdsaddas"
+            android:textColor="#292929"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <!--
+                android:layout_toLeftOf="@+id/tv_arrow"
+                <TextView
+                    android:id="@id/tv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />-->
+    </RelativeLayout>
+</LinearLayout>

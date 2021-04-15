@@ -1,0 +1,63 @@
+<resources>
+    <dimen name="appunfold_statusbar_height">25dp</dimen>
+    <!-- TODO move to values-23/ as overlay_height overload when M is released. -->
+    <dimen name="appunfold_statusbar_height_m">24dp</dimen>
+
+    <dimen name="appunfold_tipbox_padding_vertical">6dp</dimen>
+    <dimen name="appunfold_tipbox_padding_horizontal">12dp</dimen>
+
+    <dimen name="appunfold_tipbox_arrow_height">10dp</dimen>
+    <dimen name="appunfold_tipbox_arrow_width">15dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="appunfold_arrow_height">30dp</dimen>
+    <dimen name="appunfold_arrow_head_height">10dp</dimen>
+    <dimen name="appunfold_arrow_bend">4dp</dimen>
+
+
+    <!-- FAB -->
+    <dimen name="appunfold_fab_button_size_mini">56dp</dimen>
+    <dimen name="appunfold_fab_button_shadow_top">1dp</dimen>
+    <dimen name="appunfold_fab_button_shadow_radius">3dp</dimen>
+
+    <dimen name="appunfold_fab_text_size">5dp</dimen>
+    <dimen name="appunfold_dot_text_size">10sp</dimen>
+    <dimen name="appunfold_dot_radius_lower_limit">5dp</dimen>
+    <dimen name="appunfold_contextual_corner_radius">6dp</dimen>
+    <dimen name="appunfold_question_padding_l">16dp</dimen>
+    <dimen name="appunfold_question_padding">8dp</dimen>
+    <dimen name="appunfold_outline_stroke">2dp</dimen>
+    <dimen name="appunfold_answer_item_height">480dp</dimen>
+    <dimen name="appunfold_answer_item_width">290dp</dimen>
+    <dimen name="appunfold_answer_item_top_margin">12dp</dimen>
+    <dimen name="appunfold_fab_elevation">8dp</dimen>
+    <dimen name="appunfold_new_fab_text_size">12sp</dimen>
+    <dimen name="appunfold_contextual_title_text_size">14sp</dimen>
+    <dimen name="appunfold_contextual_item_text_size">14sp</dimen>
+    <dimen name="appunfold_contextual_top_margin">20dp</dimen>
+    <dimen name="appunfold_contextual_title_bottom_margin">4dp</dimen>
+    <dimen name="appunfold_contextual_title_l_r_padding">25dp</dimen>
+    <dimen name="appunfold_contextual_title_t_b_padding">5dp</dimen>
+    <dimen name="appunfold_contextual_item_t_b_padding">8dp</dimen>
+    <dimen name="appunfold_contextual_item_l_r_padding">16dp</dimen>
+    <dimen name="appunfold_contextual_item_t_margin">0dp</dimen>
+    <dimen name="appunfold_contextual_more_t_b_padding">0dp</dimen>
+    <dimen name="appunfold_contextual_more_l_r_padding">35dp</dimen>
+    <dimen name="appunfold_contextual_more_t_margin">24dp</dimen>
+    <dimen name="appunfold_contextual_more_b_margin">8dp</dimen>
+    <dimen name="appunfold_contextual_more_radius">40dp</dimen>
+    <dimen name="appunfold_contextual_more_stroke_width">1dp</dimen>
+    <dimen name="appunfold_contextual_more_text_size">14sp</dimen>
+    <dimen name="appunfold_search_icon_size">20sp</dimen>
+    <dimen name="appunfold_el_divider_height">1dp</dimen>
+    <dimen name="appunfold_fab_x_margin">15dp</dimen>
+    <dimen name="appunfold_fab_y_margin">12dp</dimen>
+    <dimen name="appunfold_target_padding">2dp</dimen>
+    <dimen name="appunfold_animation_offset">10dp</dimen>
+    <dimen name="appunfold_tooltip_radius">4dp</dimen>
+    <dimen name="appunfold_dot_border_width">2dp</dimen>
+
+    <dimen name="fab_radius">48dp</dimen>
+    <dimen name="dialog_corners">6dp</dimen>
+    <dimen name="tooltip_elevation">12dp</dimen>
+
+</resources>

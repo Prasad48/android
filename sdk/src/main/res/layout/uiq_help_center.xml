@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/uiq_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.useriq.sdk.helpcenter.views.InboxStickyScrollView
+            android:overScrollMode="always"
+            android:scrollbars="none"
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/scrollHolder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </com.useriq.sdk.helpcenter.views.InboxStickyScrollView>
+
+        <com.useriq.sdk.helpcenter.views.InboxQuestionAnswerView
+            android:id="@+id/inboxQAView"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.useriq.sdk.helpcenter.views.InboxQuestionAnswerView>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

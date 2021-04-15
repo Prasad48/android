@@ -1,0 +1,12 @@
+<resources>
+	<string name="title_activity_useriq">UserIQActivity</string>
+	<string name="appunfold_next">NEXT</string>
+	<string name="appunfold_got_it">GOT IT!</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="appunfold_step">STEP %1$d</string>
+	<string name="appunfold_close">CLOSE</string>
+	<string name="transition_morph_view">transition_morph_view</string>
+	<string name="transition_fade_view">transition_fade_view</string>
+
+</resources>

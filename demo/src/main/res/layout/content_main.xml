@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/text_sample_1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/divider_grey"
+			android:clickable="true"
+			android:padding="20dp"
+			android:text="UserIQ Named #1 in User Adoption in G2 Crowd’s Winter 2018 Implementation Index for Customer Success"
+			android:textColor="@color/appunfold_black_primary"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<ImageView
+			android:id="@+id/image"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="10dp"
+			android:src="@drawable/sample_image" />
+
+		<TextView
+			android:id="@+id/text_sample_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="@color/divider_grey"
+			android:clickable="true"
+			android:padding="20dp"
+			android:text="UserIQ Nominated in Atlanta’s Best Places to Work Awards"
+			android:textColor="@color/appunfold_black_primary"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center">
+
+			<Button
+                android:id="@+id/button_log_out"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@color/catalyst_redbox_background"
+				android:elevation="3dp"
+				android:padding="10dp"
+                android:text="Log out"
+				android:textAllCaps="false"
+				android:textColor="@color/white" />
+
+			<Button
+				android:id="@+id/button_dialog"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@color/catalyst_redbox_background"
+				android:elevation="3dp"
+				android:padding="10dp"
+				android:text="Show dialog in 5s"
+				android:textAllCaps="false"
+				android:textColor="@color/white" />
+
+			<Button
+				android:id="@+id/button_screen"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@color/catalyst_redbox_background"
+				android:elevation="3dp"
+				android:padding="10dp"
+				android:text="Open screen"
+				android:textAllCaps="false"
+				android:textColor="@color/white" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center">
+
+			<Button
+				android:id="@+id/button_ctxHelp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@color/catalyst_redbox_background"
+				android:elevation="3dp"
+				android:padding="10dp"
+				android:text="Show CtxHelp"
+				android:textAllCaps="false"
+				android:textColor="@color/white" />
+
+			<Button
+				android:id="@+id/button_helpCentre"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@color/catalyst_redbox_background"
+				android:elevation="3dp"
+				android:padding="10dp"
+				android:text="Open HelpCentre"
+				android:textAllCaps="false"
+				android:textColor="@color/white" />
+
+			<Button
+				android:id="@+id/button_update_user"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@color/catalyst_redbox_background"
+				android:elevation="3dp"
+				android:padding="10dp"
+				android:text="Update user"
+				android:textAllCaps="false"
+				android:textColor="@color/white" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>

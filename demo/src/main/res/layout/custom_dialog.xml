@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+    <LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="#574C84"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/text_user_adoption_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:paddingLeft="20dp"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
+			android:text="Success Starts with User Adoption"
+			android:textColor="@color/white"
+			android:textSize="25sp" />
+
+		<TextView
+			android:id="@+id/text_user_adoption_tag_line"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:paddingLeft="20dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="20dp"
+			android:text="A strong user adoption strategy can mean the difference between growth and churn. UserIQ will help you along the journey."
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			android:textStyle="italic" />
+
+		<Button
+			android:id="@+id/button_try_useriq_today"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#378585"
+			android:elevation="3dp"
+			android:layout_margin="20dp"
+			android:padding="10dp"
+			android:text="Try UserIQ Today"
+			android:textAllCaps="false"
+			android:textSize="20sp"
+			android:textColor="@color/white" />
+
+		<TextView
+			android:id="@+id/text_feature_1_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:paddingLeft="20dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="5dp"
+			android:text="FREE ONBOARDING GRADER"
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/text_feature_1_description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:paddingLeft="20dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="20dp"
+			android:text="A strong user adoption strategy can mean the difference between growth and churn. UserIQ will help you along the journey."
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			android:textStyle="italic" />
+
+		<TextView
+			android:id="@+id/text_feature_2_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:paddingLeft="20dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="5dp"
+			android:text="COMPLETE GUIDE TO NPS"
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/text_feature_2_description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:paddingLeft="20dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="20dp"
+			android:text="We have the answers to all your questions about Net Promoter System (NPS) best practices, strategies, and more in our complete guide."
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			android:textStyle="italic" />
+
+	</LinearLayout>
+
+</ScrollView>

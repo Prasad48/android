@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uiq_ic_close">a</string>
+    <string name="uiq_ic_keyboard_arrow_down">b</string>
+    <string name="uiq_ic_keyboard_arrow_left">c</string>
+    <string name="uiq_ic_keyboard_arrow_right">d</string>
+    <string name="uiq_ic_keyboard_arrow_up">e</string>
+    <string name="uiq_ic_search">f</string>
+    <string name="uiq_ic_arrow_right">g</string>
+    <string name="uiq_ic_cross">a</string>
+    <string name="uiq_ic_inbox">h</string>
+    <string name="uiq_ic_walkthrough">i</string>
+    <string name="uiq_ic_screentours">j</string>
+    <string name="uiq_ic_modals">k</string>
+    <string name="uiq_ic_overlays">l</string>
+    <string name="uiq_ic_help">m</string>
+    <string name="uiq_ic_blank_image">n</string>
+</resources>

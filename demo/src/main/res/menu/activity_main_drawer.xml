@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view">
+
+	<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/home"
+			android:title="Home" />
+
+		<item
+			android:id="@+id/tab"
+			android:title="Tabs" />
+
+		<item
+			android:id="@+id/clippedRect"
+			android:title="ClippedRect" />
+
+		<item
+			android:id="@+id/systemModes"
+			android:title="System Modes" />
+
+		<item
+			android:id="@+id/layers"
+			android:title="Layers" />
+
+		<item
+			android:id="@+id/web_view"
+			android:title="WebView" />
+
+		<item
+			android:id="@+id/landscape"
+			android:title="Orientation" />
+
+		<item
+			android:id="@+id/track"
+			android:title="Tracking" />
+	</group>
+
+</menu>

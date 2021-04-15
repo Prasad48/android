@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="50dp">
+
+	<Button
+		android:id="@+id/portrait"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_gravity="center"
+		android:text="Portrait" />
+
+	<Button
+		android:id="@+id/reversePortrait"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_gravity="center"
+		android:text="Reverse Portrait" />
+
+	<Button
+		android:id="@+id/landscape"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:text="Landscape" />
+
+	<Button
+		android:id="@+id/reverseLandscape"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:text="Reverse Landscape" />
+
+</LinearLayout>

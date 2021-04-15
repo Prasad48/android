@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:elevation="6dp">
+
+	<Button
+		android:id="@+id/btn_close"
+		style="?android:attr/borderlessButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:minWidth="0dp"
+		android:minHeight="0dp"
+		android:paddingTop="4dp"
+		android:paddingRight="10dp"
+		android:paddingEnd="10dp"
+		android:text="X"
+		android:textSize="14sp" />
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignRight="@id/btn_close"
+		android:layout_alignEnd="@id/btn_close"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:ellipsize="end"
+		android:gravity="center_vertical"
+		android:includeFontPadding="false"
+		android:lineSpacingExtra="0dp"
+		android:lines="1"
+		android:paddingLeft="10dp"
+		android:paddingStart="10dp"
+		android:paddingRight="10dp"
+		android:paddingEnd="10dp"
+		android:paddingTop="8dp"
+		android:text="Title"
+		android:textAllCaps="true"
+		android:textColor="@android:color/black"
+		android:textStyle="bold" />
+
+	<TextView
+		android:id="@+id/tv_desc"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tv_title"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="6dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="6dp"
+		android:ellipsize="end"
+		android:gravity="center_vertical"
+		android:includeFontPadding="false"
+		android:maxLines="10"
+		android:singleLine="false"
+		android:text="description" />
+
+	<Button
+		android:id="@+id/btn_prev"
+		style="?android:attr/borderlessButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tv_desc"
+		android:layout_marginLeft="10dp"
+		android:layout_marginStart="10dp"
+		android:layout_marginTop="0dp"
+		android:layout_marginBottom="4dp"
+		android:minWidth="0dp"
+		android:minHeight="0dp"
+		android:padding="0dp"
+		android:text="PREVIOUS"
+		android:textSize="12sp" />
+
+	<Button
+		android:id="@+id/btn_next"
+		style="?android:attr/borderlessButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tv_desc"
+		android:layout_alignRight="@id/btn_close"
+		android:layout_alignEnd="@id/btn_close"
+		android:layout_marginTop="0dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginBottom="4dp"
+		android:minWidth="0dp"
+		android:minHeight="0dp"
+		android:padding="0dp"
+		android:text="NEXT"
+		android:textSize="12sp" />
+
+</RelativeLayout>

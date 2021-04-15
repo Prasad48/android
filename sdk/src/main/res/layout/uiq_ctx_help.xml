@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ctxHelp"
+	android:layout_width="280dp"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:layout_margin="40dp"
+	android:background="@drawable/ctx_bg_round"
+	android:clickable="true"
+	android:elevation="8dp"
+	android:focusable="true"
+	android:orientation="vertical"
+	android:paddingLeft="0dp"
+	android:paddingTop="20dp"
+	android:paddingRight="0dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+        android:id="@+id/ctxHelpTitle"
+		android:text="Guides"
+		android:textAllCaps="true"
+		android:textColor="@color/appunfold_black_primary"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:id="@+id/ctxHelpSubTitle"
+		android:layout_marginBottom="10dp"
+		android:gravity="center"
+		android:text="On This Screen"
+		android:textAllCaps="true"
+		android:textColor="@color/grey"
+		android:textSize="10sp" />
+
+	<ScrollView
+		android:id="@+id/ctxHelpScroller"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:fadeScrollbars="false" />
+
+	<Button
+		android:id="@+id/moreBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+        android:drawablePadding="0dp"
+		android:text="MORE ➔"
+		android:layout_marginLeft="0dp"
+		android:layout_marginTop="@dimen/appunfold_contextual_more_t_margin"
+		android:layout_marginRight="0dp"
+		android:layout_marginBottom="@dimen/appunfold_contextual_more_b_margin"
+		android:paddingLeft="@dimen/appunfold_contextual_more_l_r_padding"
+		android:paddingTop="@dimen/appunfold_contextual_more_t_b_padding"
+		android:paddingRight="@dimen/appunfold_contextual_more_l_r_padding"
+		android:paddingBottom="@dimen/appunfold_contextual_more_t_b_padding"
+		android:textColor="@color/white" />
+
+	<TextView
+		android:id="@+id/textBuildVersion"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="build version"
+		android:textColor="@color/translucentGrey"
+		android:textSize="6sp" />
+
+</LinearLayout>

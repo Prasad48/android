@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/tt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="1"
+		android:background="@color/appunfold_blue_primary"
+		android:clickable="true">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="VG: true, Child: true" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/tf"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="1"
+		android:background="@color/appunfold_color_clicked"
+		android:clickable="true">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="20dp"
+			android:background="@color/grey"
+			android:textColor="@color/white"
+			android:text="VG: true, Child: false" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ff"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="1"
+		android:background="@color/appunfold_blue_primary"
+		android:clickable="false">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="20dp"
+			android:background="@color/grey"
+			android:textColor="@color/white"
+			android:text="VG: false, Child: false" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ft"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="1"
+		android:background="@color/appunfold_color_clicked"
+		android:clickable="false">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="VG: false, Child: true" />
+
+	</LinearLayout>
+
+</LinearLayout>

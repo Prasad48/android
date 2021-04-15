@@ -1,0 +1,63 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+	<WebView
+		android:id="@+id/web_view"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toTopOf="@+id/ll_button"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<LinearLayout
+		android:id="@+id/ll_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:id="@+id/userIqPageButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="UserIQ Page"
+			android:layout_margin="10dp"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:id="@+id/googlePageButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:text="Google"
+			android:layout_weight="1"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:id="@+id/samplePageButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Sample"
+			android:layout_margin="10dp"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/progress"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#34565655">
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+
+	</FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

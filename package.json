@@ -1,0 +1,15 @@
+{
+  "name": "rn-app",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build-demo": "yarn && react-native bundle --platform android --dev false --entry-file demo/rn-app/index.js --bundle-output demo/src/main/assets/index.android.bundle --assets-dest demo/src/main/res"
+  },
+  "dependencies": {
+    "react": "16.4.1",
+    "react-native": "^0.56.0",
+    "react-navigation": "^2.12.1",
+    "useriq-react-native": "github:useriq-com/useriq-react-native"
+  }
+}

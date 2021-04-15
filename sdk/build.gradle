@@ -1,0 +1,155 @@
+apply plugin: 'com.android.library'
+import java.text.SimpleDateFormat
+
+apply plugin: 'maven'
+
+
+def versionMajor = 2
+def versionMinor = 8
+def versionPatch = 1
+
+def publishGroupId = 'com.useriq'
+def publishArtifactId = 'sdk'
+def publishVersion = "${versionMajor}.${versionMinor}.${versionPatch}"
+
+def localReleaseDest = "${buildDir}/release/${publishVersion}"
+
+
+// On devices below minSupportedVersion, we disable SDK
+def minSupportedVersion = 16 // 95% support
+
+def sdkDevUrl = "https://qa-mobile.useriq.com/host"
+def sdkPrdUrl = "https://mobile.useriq.com/host"
+def staticPrdUrl = "https://assets.useriq.com/"
+
+configurations {
+    javadocDeps
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    // NOTE: Required for debug build of lib project
+    // Remove while publishing..
+    // See http://stackoverflow.com/a/29163361
+    //    publishNonDefault true
+    publishNonDefault true
+    defaultConfig {
+        minSdkVersion minSupportedVersion
+        targetSdkVersion 28
+        buildConfigField "Integer", "MIN_API", "${minSupportedVersion}"
+    }
+    flavorDimensions "default"
+
+    productFlavors {
+        dev {
+            versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch
+            versionName "${versionMajor}.${versionMinor}.${versionPatch}_dev_${getFormattedDate()}"
+            buildConfigField("String", "SDK_SERVER_URL", "\"${sdkDevUrl}\"")
+        }
+        prod {
+            versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch
+            versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+            buildConfigField("String", "SDK_SERVER_URL", "\"${sdkPrdUrl}\"")
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            buildConfigField("String", "STATIC_SERVER_URL", "\"${staticPrdUrl}\"")
+        }
+        release {
+            minifyEnabled true
+            buildConfigField("String", "STATIC_SERVER_URL", "\"${staticPrdUrl}\"")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        libraryVariants.all { variant ->
+            if (variant.buildType.name == 'release') {
+                variant.mergeAssets.doLast {
+                    delete(fileTree(dir: variant.mergeAssets.outputDir, includes: ['**/*.js', '**/*.json']))
+                }
+            }
+        }
+    }
+
+}
+
+
+configurations {
+    myConfig
+}
+
+dependencies {
+    api 'com.android.support:support-annotations:28.0.0'
+    testImplementation 'org.robolectric:robolectric:3.7.1'
+    javadocDeps 'com.android.support:support-annotations:28.0.0'
+    testImplementation 'junit:junit:4.12'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+//    implementation project(':net')
+}
+
+task androidJavadocs(type: Javadoc) {
+    failOnError = false
+    source = android.sourceSets.main.java.srcDirs
+    classpath += configurations.javadocDeps
+    ext.androidJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
+    classpath += files(ext.androidJar)
+}
+
+task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+    classifier = 'javadoc'
+    from androidJavadocs.destinationDir
+}
+
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.groupId = publishGroupId
+        pom.artifactId = publishArtifactId
+        pom.version = publishVersion
+        pom.packaging = "aar"
+        // Add other pom properties here if you want (developer details / licenses)
+        repository(url: "file://${localReleaseDest}")
+    }
+}
+
+task zipRelease(type: Zip) {
+    from localReleaseDest
+    destinationDir buildDir
+    archiveName "release-${publishVersion}.zip"
+}
+
+task generateRelease {
+    doLast {
+        println "Release ${publishVersion} can be found at ${localReleaseDest}/"
+        println "Release ${publishVersion} zipped can be found ${buildDir}/release-${publishVersion}.zip"
+    }
+}
+
+generateRelease.dependsOn(assemble)
+generateRelease.dependsOn(uploadArchives)
+generateRelease.dependsOn(zipRelease)
+
+artifacts {
+    archives androidSourcesJar
+    //  archives androidJavadocsJar
+}
+
+task copyLibs(type: Copy) {
+    from configurations.myConfig
+    into 'libs'
+}
+
+def getFormattedDate() {
+    def df = new SimpleDateFormat("dd-MM-yyyy HH:mm")
+    df.setTimeZone(TimeZone.getTimeZone("IST"))
+    return df.format(new Date())
+}
+
+preBuild.dependsOn(copyLibs)

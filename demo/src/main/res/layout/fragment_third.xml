@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/divider_grey"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:background="@color/white"
+		android:padding="10dp">
+
+		<ImageView
+			android:id="@+id/image_analytics"
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			android:scaleType="fitXY"
+			android:src="@drawable/idea" />
+
+		<TextView
+			android:id="@+id/text_analytics"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="10dp"
+			android:text="Identify your best customers and the WOW! moments that hook them, so you can keep them coming back and finding value."
+			android:textColor="@color/appunfold_black_primary" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:background="@color/white"
+		android:padding="10dp">
+
+		<ImageView
+			android:id="@+id/image_onboarding"
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			android:scaleType="fitXY"
+			android:src="@drawable/compass" />
+
+		<TextView
+			android:id="@+id/text_onboarding"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="10dp"
+			android:text="Get onboarding guidance tools that help new users experience must-see features quickly so they have a better first impression of your brand."
+			android:textColor="@color/appunfold_black_primary" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:background="@color/white">
+
+		<ImageView
+			android:id="@+id/image_in_app"
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			android:scaleType="fitXY"
+			android:src="@drawable/announce" />
+
+		<TextView
+			android:id="@+id/text_in_app"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="10dp"
+			android:text="Guide customers who need help, prompt users who haven’t found core features, and upsell as you go — all from a single suite of tools."
+			android:textColor="@color/appunfold_black_primary" />
+
+	</LinearLayout>
+
+</LinearLayout>

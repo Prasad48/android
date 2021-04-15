@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <declare-styleable name="AppunfoldIconView">
+        <attr name="iconName" format="reference|string"/>
+        <attr name="iconColor" format="reference|color"/>
+        <attr name="iconSize" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+
+    <bool name="isTablet">true</bool>
+
+</resources>

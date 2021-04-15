@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="appunfold_black_primary">#2F3334</color>
+    <color name="appunfold_img_alpha_color">#99000000</color>
+    <color name="appunfold_blue_primary">#369EDE</color>
+
+    <color name="appunfold_color_clicked">#afafaf</color>
+    <color name="appunfold_grey_dark_color">#999999</color>
+
+    <color name="uiq_primary">#3dacac</color>
+    <color name="fabBg">#2f8282</color>
+    <color name="ctxBg">#FFFFFFFF</color>
+    <color name="v1modalBg">#FFFFFFFF</color>
+    <color name="grey">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider_grey">#15000f36</color>
+    <color name="empty_state_grey">#15000f36</color>
+    <color name="statusBarColor">#11000000</color>
+    <color name="containerBackdrop">#BF000f36</color>
+    <color name="translucentGrey">#55000000</color>
+
+</resources>
